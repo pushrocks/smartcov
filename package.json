@@ -1,6 +1,6 @@
 {
   "name": "smartcov",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "turn coverage data into useable numbers.",
   "main": "index.js",
   "scripts": {
