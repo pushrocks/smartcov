@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/pushrocks/smartcov#readme",
   "devDependencies": {
-    "npmts": "^3.6.8"
+    "npmts": "^3.6.8",
+    "should": "^8.3.0"
   },
   "dependencies": {
     "fs-extra": "^0.26.7",
     "lcov-parse": "0.0.10",
-    "q": "^1.4.1",
-    "should": "^8.3.0"
+    "q": "^1.4.1"
   }
 }
