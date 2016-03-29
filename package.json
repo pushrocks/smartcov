@@ -1,0 +1,28 @@
+{
+  "name": "smartcov",
+  "version": "0.0.0",
+  "description": "turn coverage data into useable numbers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "(npmts)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pushrocks/smartcov.git"
+  },
+  "author": "Losslss GmbH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pushrocks/smartcov/issues"
+  },
+  "homepage": "https://github.com/pushrocks/smartcov#readme",
+  "devDependencies": {
+    "npmts": "^3.6.8"
+  },
+  "dependencies": {
+    "fs-extra": "^0.26.7",
+    "lcov-parse": "0.0.10",
+    "q": "^1.4.1",
+    "should": "^8.3.0"
+  }
+}

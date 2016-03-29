@@ -1,0 +1,7 @@
+/// <reference path="./typings/main.d.ts" />
+"use strict";
+exports.lcovParse = require("lcov-parse");
+exports.fs = require("fs-extra");
+exports.Q = require("q");
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNtYXJ0Y292LnBsdWdpbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsNENBQTRDOztBQUVqQyxpQkFBUyxHQUFHLE9BQU8sQ0FBQyxZQUFZLENBQUMsQ0FBQztBQUNsQyxVQUFFLEdBQUcsT0FBTyxDQUFDLFVBQVUsQ0FBQyxDQUFDO0FBQ3pCLFNBQUMsR0FBRyxPQUFPLENBQUMsR0FBRyxDQUFDLENBQUMiLCJmaWxlIjoic21hcnRjb3YucGx1Z2lucy5qcyIsInNvdXJjZXNDb250ZW50IjpbIi8vLyA8cmVmZXJlbmNlIHBhdGg9XCIuL3R5cGluZ3MvbWFpbi5kLnRzXCIgLz5cblxuZXhwb3J0IGxldCBsY292UGFyc2UgPSByZXF1aXJlKFwibGNvdi1wYXJzZVwiKTtcbmV4cG9ydCBsZXQgZnMgPSByZXF1aXJlKFwiZnMtZXh0cmFcIik7XG5leHBvcnQgbGV0IFEgPSByZXF1aXJlKFwicVwiKTsiXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0=

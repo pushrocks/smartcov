@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- '0.11'
+- '0.10'
+deploy:
+  provider: npm
+  email: npm@lossless.digital
+  api_key:
+    secure: AmIQdboC4ORffXzOkw8XwRtMaAyyjFsHOwdreUWI7cXQqqKmoAr4Cv4oVuE6s6HMAg2QICcEMBoJ3x+XHy9zw7Wyc+lbvI5z7Jn3vwAeSI3VY9LfSCJhRMy+ebDohpjn1nDkQuhb2v5R6w/eaucjgzhlL9/TwVWDmtOtEDEfQB9LSx1U8hBoKN271Fqbx8GW4tdoyLXyL3beZj/7QpDDatT7w+Z4jKZeWD5V70+LUrdll8pmUeAne2Nn36jz8vBGKJu3K7X65eTSxInWUJQVSnlIEO/NGPti1RLFNHySKXvCbhVgOAWdU7oWUeyqFbJ/FEGpHYnZvINK6MljYJkefgBmNmNbeTJE86rAzD8rG8xlacHnFHeUjZufN/F6IMwBbhLn3hNb83CszcpbVmwZgb9qo155CrB7RbHOIUg9edM8UkzJk2f10SnjpLqCrOWXVsABpZzbMngEqApeyhMNnzD+uNxml5xy2b3bVnzRtF8//ZAdCqIv8c8YviRs/mMKEtMPnSN6Gh/krMrFLKgjbrgwEpiWqTrzCFGQT++LM4PQzWFRv6lQ2eVQYcnTPIkJuXLurfK6mX+WVHWK2089lOKZoE2QAeStzOwER9T5cDAr501jgobYFlX/rhWardJKTuosFvXj9+DL8cN0ibFP0UVrFDJ2xh74xXXB7TrRuXQ=
+  on:
+    tags: true
+    repo: pushrocks/smartcov
