@@ -4,6 +4,7 @@ export let percentage = function(filePathArg:string, format?:string):number {
     let done = plugins.Q.defer();
     let report = plugins.fs.readFileSync(filePathArg, 'utf8');
     let coveragePercentage:number;
+    let coveragePercentageRounded:number;
     format = format || 'jscoverage';
     switch(format) {
         case 'lcov':
@@ -19,7 +20,8 @@ export let percentage = function(filePathArg:string, format?:string):number {
                     found += data[i].lines.found;
                 }
                 coveragePercentage = (hit / found) * 100;
-                done.resolve(coveragePercentage);
+                coveragePercentageRounded = plugins.mathjs.round(coveragePercentage);
+                done.resolve(coveragePercentageRounded);
             });
             break;
     }
