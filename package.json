@@ -21,6 +21,7 @@
     "should": "^8.3.0"
   },
   "dependencies": {
+    "beautylog": "^4.1.2",
     "fs-extra": "^0.26.7",
     "lcov-parse": "0.0.10",
     "mathjs": "^3.1.4",
