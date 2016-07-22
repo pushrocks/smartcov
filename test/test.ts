@@ -1,24 +1,26 @@
-/// <reference path="../ts/typings/main.d.ts" />
+import "typings-test";
 
-let smartcov = require("../dist/index.js");
+import * as smartcov from "../dist/index.js";
 let should = require("should");
 
 describe("smartcov",function(){
     describe(".get",function(){
         describe(".percentage",function(){
-            it("should output a correct value for valid lcov.info file",function(done){
-                smartcov.get.percentage("./test/lcov.info")
+            it("should get resolved with correct value for valid lcov.info file",function(done){
+                smartcov.get.percentage("./test/lcov.info",2)
                     .then(function(percentageArg){
-                        console.log(percentageArg);
+                        percentageArg.should.equal(63.64);
                         done();
                     });
             });
-            it("should output 0 and warn when confronted with invalid input",function(done){
-                smartcov.get.percentage("./test/lcovNotThere.info")
-                    .then(function(percentageArg){
-                        console.log(percentageArg);
-                        done();
-                    });
+            it("should get rejected for invalid file and warn",function(done){
+                smartcov.get.percentage("./test/lcovNotThere.info",2)
+                    .then(
+                        function(percentageArg){},
+                        function(){
+                            done();
+                        }
+                    );
             });
         });
     });

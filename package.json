@@ -17,14 +17,17 @@
   },
   "homepage": "https://github.com/pushrocks/smartcov#readme",
   "devDependencies": {
-    "npmts": "^5.0.3",
-    "should": "^8.3.0"
+    "npmts-g": "^5.2.6",
+    "should": "^10.0.0",
+    "typings-test": "^1.0.1"
   },
   "dependencies": {
-    "beautylog": "^4.1.2",
-    "fs-extra": "^0.26.7",
+    "@types/q": "^0.0.27",
+    "beautylog": "^5.0.14",
+    "fs-extra": "^0.30.0",
     "lcov-parse": "0.0.10",
-    "mathjs": "^3.1.4",
-    "q": "^1.4.1"
+    "mathjs": "^3.3.0",
+    "q": "^1.4.1",
+    "typings-global": "^1.0.6"
   }
 }
